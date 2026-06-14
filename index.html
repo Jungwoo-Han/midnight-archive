@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>생활오류 제보판 - 틈새게시판</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <nav class="top-links" aria-label="상단 메뉴">
+        <a href="index.html">게시판</a>
+        <a href="#">인기글</a>
+        <a href="#">탐방</a>
+        <a href="#">제보</a>
+        <a href="#">이벤트</a>
+        <a href="#">로그인</a>
+        <a href="#">야간모드</a>
+      </nav>
+      <div class="brand-row">
+        <div>
+          <h1>틈새게시판</h1>
+          <p>사람 없는 곳에 남은 이상한 흔적을 올리는 제보판</p>
+        </div>
+        <label class="search-box">
+          <span class="sr-only">검색</span>
+          <input id="siteSearch" type="search" placeholder="검색어를 입력하세요 (제목/작성자)">
+        </label>
+      </div>
+      <div id="categoryTabs" class="tab-row" aria-label="게시판 카테고리"></div>
+    </header>
+
+    <main class="layout">
+      <section class="main-column">
+        <div class="board-title-row">
+          <h2>생활오류 제보판</h2>
+          <span id="resultCount">총 0개</span>
+        </div>
+        <div class="board-table-wrap content-box">
+          <table class="board-table">
+            <colgroup>
+              <col class="no-col">
+              <col>
+              <col class="author-col">
+              <col class="date-col">
+              <col class="number-col">
+              <col class="number-col">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>글쓴이</th>
+                <th>작성일</th>
+                <th>조회</th>
+                <th>추천</th>
+              </tr>
+            </thead>
+            <tbody id="postRows"></tbody>
+          </table>
+        </div>
+        <div class="pagination" aria-label="페이지">
+          <a href="#">◀</a>
+          <a class="is-current" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">▶</a>
+        </div>
+        <div class="bottom-notice content-box">
+          <b>하단 공지</b>
+          <span>제보글 작성 시 실제 주소와 업체명은 흐리게 처리해주세요. 사진 속 얼굴과 차량번호는 게시 전 확인 바랍니다.</span>
+        </div>
+      </section>
+
+      <aside id="sidebar" class="sidebar" aria-label="오른쪽 사이드바"></aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>틈새게시판은 이용자가 올린 제보를 보관하지 않습니다.</p>
+      <p><a href="#">문의</a> | <a href="#">이용안내</a> | <a href="#">신고</a></p>
+    </footer>
+  </div>
+
+  <script src="data/posts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

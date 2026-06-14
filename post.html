@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>게시글 - 틈새게시판</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <nav class="top-links" aria-label="상단 메뉴">
+        <a href="index.html">게시판</a>
+        <a href="#">인기글</a>
+        <a href="#">탐방</a>
+        <a href="#">제보</a>
+        <a href="#">이벤트</a>
+        <a href="#">로그인</a>
+        <a href="#">야간모드</a>
+      </nav>
+      <div class="brand-row">
+        <div>
+          <h1><a href="index.html">틈새게시판</a></h1>
+          <p>사람 없는 곳에 남은 이상한 흔적을 올리는 제보판</p>
+        </div>
+        <label class="search-box">
+          <span class="sr-only">검색</span>
+          <input id="siteSearch" type="search" placeholder="검색어를 입력하세요 (제목/작성자)">
+        </label>
+      </div>
+      <div class="tab-row static-tabs" aria-label="게시판 카테고리">
+        <a href="index.html">전체</a>
+        <a href="index.html">무인시설</a>
+        <a href="index.html">공공장소</a>
+        <a href="index.html">외곽/산길</a>
+        <a href="index.html">사진제보</a>
+        <a href="index.html">질문</a>
+        <a href="index.html">후기</a>
+        <a href="index.html">공지</a>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section id="postDetail" class="main-column"></section>
+      <aside id="sidebar" class="sidebar" aria-label="오른쪽 사이드바"></aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>틈새게시판은 이용자가 올린 제보를 보관하지 않습니다.</p>
+      <p><a href="#">문의</a> | <a href="#">이용안내</a> | <a href="#">신고</a></p>
+    </footer>
+  </div>
+
+  <script src="data/posts.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/post.js"></script>
+</body>
+</html>
