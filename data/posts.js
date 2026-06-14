@@ -226,7 +226,7 @@ window.POSTS = [
     category: "외곽/산길",
     label: "사진",
     title: "등산로 중간에 신발만 여러 켤레 놓여있었음",
-    author: "탐사러23",
+    author: "탐사러2",
     ip: "211.234",
     date: "06.11",
     time: "17:22",
